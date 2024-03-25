@@ -8,10 +8,12 @@ export const Auth = {
         username: { label: "email", type: "text", placeholder: "" },
         password: { label: "password", type: "password", placeholder: "" },
       },
-      async authorize(credentials: any) {
+      async authorize(input: any) {
+        console.log(input);
         return {
           id: "Rushikesh",
         };
+        // return null;
       },
     }),
   ],
