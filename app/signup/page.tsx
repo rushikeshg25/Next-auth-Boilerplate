@@ -8,6 +8,7 @@ import {
   IconBrandGoogle,
   IconBrandOnlyfans,
 } from "@tabler/icons-react";
+import { ModeToggle } from "@/components/ModeToggle";
 
 export default function page() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -15,7 +16,10 @@ export default function page() {
     console.log("Form submitted");
   };
   return (
-    <div className='flex h-screen w-screen justify-center items-center'>
+    <div className='flex h-screen w-screen justify-center items-center dark:bg-black'>
+      <div className='fixed top-0 right-0'>
+        <ModeToggle />
+      </div>
       <div className='max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black'>
         <h2 className='font-bold text-xl text-neutral-800 dark:text-neutral-200'>
           Signup
